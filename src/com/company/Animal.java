@@ -38,6 +38,4 @@ public abstract class Animal {
         this.foodQuantity = foodQuantity;
     }
 
-    public Animal(Double weight, Double foodQuantity) {
-    }
 }

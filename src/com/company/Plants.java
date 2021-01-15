@@ -76,23 +76,23 @@ public class Plants {
 
     public Plants(TypeOfPlant type) {
         if (type == TypeOfPlant.appleTree) {
-            this.efficiency = 0.8D;
-            this.harvestCost = 10000.0D;
-            this.prepareCost = 50000.0D;
-            this.secureCost = 15000.0D;
-            this.sellValue = 300000.0D;
-            this.value = 100000.0D;
+            this.efficiency = 0.8;
+            this.harvestCost = 10000.0;
+            this.prepareCost = 50000.0;
+            this.secureCost = 15000.0;
+            this.sellValue = 300000.0;
+            this.value = 100000.0;
             this.type = TypeOfPlant.appleTree;
             this.readyToHarvest = false;
         }
 
         if (type == TypeOfPlant.grain) {
-            this.efficiency = 0.8D;
-            this.harvestCost = 1000.0D;
-            this.prepareCost = 2000.0D;
-            this.secureCost = 1000.0D;
-            this.sellValue = 80000.0D;
-            this.value = 20000.0D;
+            this.efficiency = 0.8;
+            this.harvestCost = 1000.0;
+            this.prepareCost = 2000.0;
+            this.secureCost = 1000.0;
+            this.sellValue = 80000.0;
+            this.value = 20000.0;
             this.type = TypeOfPlant.grain;
             this.readyToHarvest = false;
         }

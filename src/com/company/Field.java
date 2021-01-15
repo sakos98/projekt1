@@ -7,7 +7,8 @@ public class Field {
     private Double sizeFree;
     private Double sizeFull;
     private Double value;
-    private Plants plants;
+
+
     List<Plants> plantsList = new ArrayList(0);
     List<Double> plantSize = new ArrayList(0);
 

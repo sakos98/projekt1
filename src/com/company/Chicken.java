@@ -21,9 +21,12 @@ public class Chicken extends Animal {
         this.breedChance = breedChance;
     }
 
-    public Chicken(Double weight, Double foodQuantity) {
-        super(weight, foodQuantity);
-        this.setTypeOfBuilding(TypeOfBuilding.chickenCoop);
-        this.setValue(50.0D);
+
+
+    public Chicken (Double weight,Double foodQuantity){
+        this.setWeight(weight);
+        this.setFoodQuantity(foodQuantity);
+        setTypeOfBuilding(TypeOfBuilding.chickenCoop);
+        setValue(50.0);
     }
 }

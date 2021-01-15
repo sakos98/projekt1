@@ -122,7 +122,7 @@ public class Player {
     public void Feed(Animal animal, Double portion) {
         animal.setWeight(animal.getWeight() + portion);
         System.out.println("Weight of that animal is now " + animal.getWeight());
-        if (animal.getFoodQuantity() >= portion) {
+        if (animal.getFoodQuantity() <= portion) {
             System.out.println("And is full now :D");
         } else {
             System.out.println("Still needs " + (animal.getFoodQuantity() - portion) + " to be full");
@@ -159,10 +159,10 @@ public class Player {
         if (farm.buildings.contains(building)) {
             Building vbuilding = (Building)farm.buildings.get(farm.buildings.indexOf(building));
             vbuilding.Animals.remove(animal);
-            this.setMoney(this.getMoney() + animal.getValue() * 0.8D);
+            this.setMoney(this.getMoney() + animal.getValue() * 0.8);
             System.out.println("Animal sold");
         } else if (this.Animals.contains(animal)) {
-            this.setMoney(this.getMoney() + animal.getValue() * 0.8D);
+            this.setMoney(this.getMoney() + animal.getValue() * 0.8);
         } else {
             System.out.println("But you don't have this animal anywhere");
         }
@@ -171,10 +171,7 @@ public class Player {
 
     public void CheckPlantWarehouse() {
         System.out.println("Your plant warehouse list: ");
-        Iterator var1 = this.Warehouse.iterator();
-
-        while(var1.hasNext()) {
-            Plants plant = (Plants)var1.next();
+        for (Plants plant:this.Warehouse){
             System.out.println(plant.getType());
         }
 

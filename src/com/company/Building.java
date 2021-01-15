@@ -29,7 +29,4 @@ public class Building {
         this.typeOfBuilding = type;
     }
 
-    public TypeOfBuilding writeKind() {
-        return this.typeOfBuilding;
-    }
 }
